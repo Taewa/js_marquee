@@ -1,0 +1,43 @@
+/* var
+========================================================================== */
+@marqueeSpeed : 3s;
+
+
+/* Marquee - Taehwa custom. It aborted
+========================================================================== */
+
+.marquee-wrapper{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+
+	
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+
+
+		.marquee-inner {
+			display: block;
+			width: 100%;
+			height: 30px;
+			position: relative;
+			overflow: hidden;
+		}
+
+
+		.marquee-element {
+			// width: 50%;
+			float: left;
+			position: relative;
+			font-family: "Tungsten-Semibold", Courier, monospace;
+			color: #000;
+			white-space: nowrap;
+			
+			//marqueeAnimation will be created by js
+			.prefix(animation, marqueeAnimation @marqueeSpeed linear infinite);
+		}
+	
+}
+
+
